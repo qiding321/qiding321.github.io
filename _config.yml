@@ -4,7 +4,7 @@
 
 title: Ding Qi # the website title (if blank, full name will be used instead)
 first_name: Ding
-middle_name: 
+middle_name:
 last_name: Qi
 email: dqi24@m.fudan.edu.cn
 contact_note: >
@@ -19,7 +19,7 @@ keywords: >
   market microstructure, high-frequency trading, asset pricing, China A-share, Fudan University
 
 url: https://qiding321.github.io
-baseurl: 
+baseurl:
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
