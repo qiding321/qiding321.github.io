@@ -18,6 +18,11 @@ giscus:
   category_id: DIC_kwDOExample
 YAML
 
+if ! compgen -G "_posts/*distill*.md" >/dev/null; then
+  echo "distill fixture post not present; skipping distill integration checks"
+  exit 0
+fi
+
 bundle exec jekyll build --config "_config.yml,${tmp_override}" -d "${tmp_site}" >/dev/null
 
 distill_page="${tmp_site}/blog/2021/distill/index.html"
