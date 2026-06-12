@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: >
-  PhD Candidate in Finance · <a href="https://www.fudan.edu.cn/en/" target="_blank">Fudan University</a>
+  PhD Candidate in Finance · Fudan University
 
 profile:
   align: right
@@ -25,5 +25,3 @@ I am a Ph.D. candidate in Finance at the School of Economics, Fudan University, 
 Prior to my doctoral studies, I worked as a Quantitative Researcher at Mingshi Investment Co. Ltd and as a Portfolio Manager at Muse Fund, where I was primarily responsible for high-frequency trading strategies in Chinese stock and convertible bond markets.
 
 I hold a Bachelor's degree from Nanjing University and a Master's degree from Fudan University.
-
-**[Curriculum Vitae](/cv/)**
