@@ -17,7 +17,7 @@ profile:
 
 news: false
 selected_papers: true
-social: true
+social: false
 ---
 
 I am a Ph.D. candidate in Finance at the School of Economics, Fudan University, advised by Prof. Lijian Sun. My research focuses on market microstructure and high-frequency trading (HFT), with a particular interest in China's equity markets and asset pricing.
