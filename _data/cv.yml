@@ -2,32 +2,29 @@ cv:
   name: Ding Qi
   label: PhD Candidate in Finance
   email: dqi24@m.fudan.edu.cn
-  location: Shanghai, China
+  location: Shanghai
   image: ""
-  summary: PhD candidate in Finance at the School of Economics, Fudan University. Research interests include market microstructure, high-frequency trading, China's equity markets, and asset pricing.
 
   social_networks: []
 
   sections:
     Education:
       - institution: Fudan University
-        location: Shanghai, China
+        location: Shanghai
         area: Finance
         studyType: PhD
         start_date: ""
         end_date: Present
-        highlights:
-          - Advised by Prof. Lijian Sun.
 
       - institution: Fudan University
-        location: Shanghai, China
+        location: Shanghai
         area: ""
         studyType: Master's degree
         start_date: ""
         end_date: ""
 
       - institution: Nanjing University
-        location: Nanjing, China
+        location: Nanjing
         area: ""
         studyType: Bachelor's degree
         start_date: ""
@@ -36,19 +33,19 @@ cv:
     Experience:
       - company: Muse Fund
         position: Portfolio Manager
-        location: China
+        location: ""
         start_date: ""
         end_date: ""
         highlights:
-          - Worked on high-frequency trading strategies in Chinese stock and convertible bond markets.
+          - Portfolio Manager in stock and convertible bond T0 trading.
 
       - company: Mingshi Investment Co. Ltd
-        position: Researcher
-        location: China
+        position: Quantitative Researcher
+        location: ""
         start_date: ""
         end_date: ""
         highlights:
-          - Worked on high-frequency trading strategies in Chinese stock and convertible bond markets.
+          - Quantitative Researcher on alpha and stock T0 trading.
 
     Research Interests:
       - name: Market Microstructure
