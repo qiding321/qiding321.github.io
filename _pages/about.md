@@ -26,4 +26,4 @@ Prior to my doctoral studies, I worked in the hedge fund industry as a Portfolio
 
 I hold a Bachelor's degree from [Nanjing University](https://www.nju.edu.cn/en/) and a Master's degree from [Fudan University](https://www.fudan.edu.cn/en/).
 
-**[Curriculum Vitae](/assets/pdf/CV.pdf)**
+**[Curriculum Vitae](/cv/)**
