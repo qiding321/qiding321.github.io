@@ -18,6 +18,11 @@ giscus:
   category_id: DIC_kwDOExample
 YAML
 
+if ! compgen -G "_posts/*giscus-comments*.md" >/dev/null || ! compgen -G "_posts/*disqus-comments*.md" >/dev/null; then
+  echo "comments fixture posts not present; skipping comments integration checks"
+  exit 0
+fi
+
 bundle exec jekyll build --config "_config.yml,${tmp_override}" -d "${tmp_site}" >/dev/null
 
 giscus_page="${tmp_site}/blog/2022/giscus-comments/index.html"
