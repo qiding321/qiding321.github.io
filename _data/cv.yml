@@ -2,7 +2,6 @@ cv:
   name: Ding Qi
   label: PhD Candidate in Finance
   email: dqi24@m.fudan.edu.cn
-  location: Shanghai
   image: ""
 
   social_networks: []
@@ -59,9 +58,3 @@ cv:
         date: 2025-10
         highlights:
           - Academic Roundtable Discussion.
-
-    Research Interests:
-      - name: Market Microstructure
-      - name: High-Frequency Trading
-      - name: Asset Pricing
-      - name: China A-share Markets
