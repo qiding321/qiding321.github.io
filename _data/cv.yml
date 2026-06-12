@@ -28,14 +28,14 @@ cv:
 
     Experience:
       - company: Muse Fund
-        position: Portfolio Manager
+        position: ""
         start_date: ""
         end_date: ""
         highlights:
           - Portfolio Manager in stock and convertible bond T0 trading.
 
       - company: Mingshi Investment Co. Ltd
-        position: Quantitative Researcher
+        position: ""
         start_date: ""
         end_date: ""
         highlights:
@@ -43,7 +43,5 @@ cv:
 
     Presentations:
       - name: International Symposium on Global Value Chains and International Finance, Kobe University, Japan, Oct 2025
-        summary: Identifying High-Frequency Trading in China and Its Effects on Market Quality.
 
       - name: Academic Roundtable Discussion, School of International and Public Policy, Hitotsubashi University, Tokyo, Japan, Oct 2025
-        summary: Identifying High-Frequency Trading in China and Its Effects on Market Quality.

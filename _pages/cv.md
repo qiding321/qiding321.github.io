@@ -30,17 +30,13 @@ Bachelor's degree
 ## Experience
 
 **Muse Fund**  
-Portfolio Manager  
 Portfolio Manager in stock and convertible bond T0 trading.
 
 **Mingshi Investment Co. Ltd**  
-Quantitative Researcher  
 Quantitative Researcher on alpha and stock T0 trading.
 
 ## Presentations
 
-**International Symposium on Global Value Chains and International Finance, Kobe University, Japan, Oct 2025**  
-Identifying High-Frequency Trading in China and Its Effects on Market Quality.
+International Symposium on Global Value Chains and International Finance, Kobe University, Japan, Oct 2025
 
-**Academic Roundtable Discussion, School of International and Public Policy, Hitotsubashi University, Tokyo, Japan, Oct 2025**  
-Identifying High-Frequency Trading in China and Its Effects on Market Quality.
+Academic Roundtable Discussion, School of International and Public Policy, Hitotsubashi University, Tokyo, Japan, Oct 2025
