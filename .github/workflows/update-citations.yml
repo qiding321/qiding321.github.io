@@ -1,11 +1,37 @@
 name: Update Google Scholar Citations
 
 on:
-  schedule:
-    - cron: "0 0 * * 1" # Monday
-    - cron: "0 0 * * 3" # Wednesday
-    - cron: "0 0 * * 5" # Friday
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - "assets/**"
+      - "**.bib"
+      - "**.html"
+      - "**.js"
+      - "**.liquid"
+      - "**/*.md"
+      - "**.yml"
+      - "Gemfile"
+      - "Gemfile.lock"
+      - "!.github/workflows/axe.yml"
+      - "!.github/workflows/broken-links.yml"
+      - "!.github/workflows/deploy-docker-tag.yml"
+      - "!.github/workflows/deploy-image.yml"
+      - "!.github/workflows/docker-slim.yml"
+      - "!.github/workflows/lighthouse-badger.yml"
+      - "!.github/workflows/prettier.yml"
+      - "!lighthouse_results/**"
+      - "!docs/CONTRIBUTING.md"
+      - "!docs/CUSTOMIZE.md"
+      - "!docs/FAQ.md"
+      - "!docs/INSTALL.md"
+      - "!README.md"
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   update-citations:
@@ -18,18 +44,33 @@ jobs:
       #        with:
       #          token: ${{ secrets.PAT }}
 
+      - name: Check Google Scholar configuration
+        id: scholar_config
+        shell: bash
+        run: |
+          if [ -f _data/socials.yml ] && grep -Eq '^[[:space:]]*scholar_userid:[[:space:]]*[^#[:space:]]+' _data/socials.yml; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+            echo "Google Scholar user ID is configured."
+          else
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "Google Scholar user ID is not configured; skipping citation update." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
       - name: Set up Python
+        if: steps.scholar_config.outputs.configured == 'true'
         uses: actions/setup-python@v4
         with:
           python-version: "3.13"
 
       - name: Install dependencies
+        if: steps.scholar_config.outputs.configured == 'true'
         run: |
           echo "🔧 Installing dependencies..."
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: Save current citations.yml hash
+        if: steps.scholar_config.outputs.configured == 'true'
         id: before
         run: |
           echo "📦 Checking existing citations.yml hash..."
@@ -43,6 +84,7 @@ jobs:
           fi
 
       - name: Run citation update script
+        if: steps.scholar_config.outputs.configured == 'true'
         id: run_citation_update
         shell: bash
         run: |
@@ -62,6 +104,7 @@ jobs:
           set -e
 
       - name: Save new citations.yml hash
+        if: steps.scholar_config.outputs.configured == 'true'
         id: after
         run: |
           echo "🔍 Checking updated citations.yml hash..."
@@ -75,6 +118,7 @@ jobs:
           fi
 
       - name: Report citations.yml change in summary
+        if: steps.scholar_config.outputs.configured == 'true'
         run: |
           echo "📋 Comparing citation file hashes..."
           if [ "${{ steps.before.outputs.sha_before }}" != "${{ steps.after.outputs.sha_after }}" ]; then
@@ -86,12 +130,14 @@ jobs:
           fi
 
       - name: Configure Git
+        if: steps.scholar_config.outputs.configured == 'true'
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           echo "🔧 Git configured."
 
       - name: Commit and push if changed
+        if: steps.scholar_config.outputs.configured == 'true'
         run: |
           git add _data/citations.yml
           git diff --staged --quiet || (

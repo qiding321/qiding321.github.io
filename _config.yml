@@ -332,7 +332,7 @@ scholar:
 enable_publication_badges:
   altmetric: true
   dimensions: true
-  google_scholar: true
+  google_scholar: false
   inspirehep: true
 
 # Filter out certain bibtex entry keywords used internally from the bib output
