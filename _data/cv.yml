@@ -1,5 +1,5 @@
 cv:
-  name: Ding Qi
+  name: Ding Qi (祁鼎)
   label: PhD Candidate in Finance
   email: dqi24@m.fudan.edu.cn
   image: ""
@@ -42,6 +42,8 @@ cv:
           - Quantitative Researcher on alpha and stock T0 trading.
 
     Presentations:
+      - name: MRS 2026 International Risk Conference, University of Hawaii, Jul 2026
+
       - name: International Symposium on Global Value Chains and International Finance, Kobe University, Japan, Oct 2025
 
       - name: Academic Roundtable Discussion, School of International and Public Policy, Hitotsubashi University, Tokyo, Japan, Oct 2025
