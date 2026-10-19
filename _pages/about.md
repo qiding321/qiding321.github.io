@@ -16,7 +16,7 @@ profile:
     <p><a href="mailto:dqi24@m.fudan.edu.cn">dqi24@m.fudan.edu.cn</a></p>
 
 news: false
-selected_papers: true
+selected_papers: false
 social: false
 ---
 

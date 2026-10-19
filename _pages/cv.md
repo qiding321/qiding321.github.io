@@ -37,8 +37,11 @@ Quantitative Researcher on alpha and stock T0 trading.
 
 ## Presentations
 
-MRS 2026 International Risk Conference, University of Hawaii, Jul 2026
+**MRS 2026 International Risk Conference**  
+University of Hawaii, USA · July 2026
 
-International Symposium on Global Value Chains and International Finance, Kobe University, Japan, Oct 2025
+**International Symposium on Global Value Chains and International Finance**  
+Kobe University, Japan · October 2025
 
-Academic Roundtable Discussion, School of International and Public Policy, Hitotsubashi University, Tokyo, Japan, Oct 2025
+**Academic Roundtable Discussion**  
+School of International and Public Policy, Hitotsubashi University, Japan · October 2025
